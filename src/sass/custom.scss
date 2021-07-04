@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-size: 12px;
+}
+
+$btn-colors: (
+  "primary": #000000,
+  "secondary": #FFF000
+);
+
+@each $name, $color in $btn-colors {
+  .btn-#{$name} {
+    background-color: #{$color};
+  }
+}
+
+$typography: (
+  "fz12": 12px,
+  "fz18": 18px,
+  "fz20": 20px,
+  "fz30": 30px
+);
+
+@each $name, $fontSize in $typography {
+  .#{$name} {
+    font-size: #{$fontSize};
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
