@@ -1,0 +1,96 @@
+﻿@import "../../../../sass/Variables";
+
+.is-scan-camera {
+  background-color: $body-text;
+}
+.scan-point-camera__wrap {
+  color: $white;
+}
+.event__desc,
+.camera__qa {
+  a {
+    color:  $white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.camera__box {
+  width: 260px;
+  height: 260px;
+  margin: 40px auto;
+  background-color: $white;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  
+  span {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 20px;
+    height: 6px;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 2;
+      content: '';
+      width: 20px;
+      height: 6px;
+      border-radius: 20px;
+      background-color: $primary;
+    }
+    &::after {
+      transform: rotate(90deg);
+    }
+    &:first-child,
+    &:nth-child(2) {
+      top: 0;
+    }
+    &:last-child,
+    &:nth-child(3) {
+      bottom: 0;
+    }
+    
+    &:nth-child(2),
+    &:nth-child(4){
+      right: 0;
+    }
+
+    &:first-child {
+      &::after {
+        top: 7px;
+        left: -7px;
+      }
+    }
+    &:nth-child(3) {
+      &::after {
+        bottom: 7px;
+        left: -7px;
+      }
+    }
+    &:nth-child(2) {
+      &::after {
+        top: 7px;
+        right: -7px;
+      }
+    }
+    &:last-child {
+      &::after {
+        bottom: 7px;
+        right: -7px;
+      }
+    }
+  }
+}
+
+.outline-primary-camera {
+  background-color: $white;
+  &:hover {
+    color: $white;
+  }
+}

@@ -1,0 +1,12 @@
+﻿.input__box {
+  position: relative;
+  z-index: 0;
+  
+  label {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 5px;
+  }
+}

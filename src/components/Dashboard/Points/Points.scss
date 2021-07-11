@@ -1,0 +1,33 @@
+﻿@import "../../../sass/Variables";
+.point__list {
+  margin-bottom: 0;
+  
+  li {
+    border-bottom: 1px solid $secondary;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+.point__head {
+  display: flex;
+  justify-content: space-between;
+  
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.point__empty {
+  position: relative;
+  z-index: 0;
+  color: $secondary;
+  p {
+    margin-top: 50%;
+  }
+}
